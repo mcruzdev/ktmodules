@@ -1,2 +1,3 @@
 rootProject.name = "ktmodules"
-include("email")
+include("validation")
+include("application")

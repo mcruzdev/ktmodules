@@ -9,6 +9,7 @@ plugins {
 
 group = "com.github.mcruzdev"
 version = "0.0.1-SNAPSHOT"
+
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
 
@@ -17,16 +18,7 @@ repositories {
 }
 
 dependencies {
-//    spring
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-
-//    kotlin
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-
-//    modules
-    implementation(project(mapOf("path" to ":email")))
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.withType<KotlinCompile> {

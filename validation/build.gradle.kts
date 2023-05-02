@@ -2,8 +2,11 @@ plugins {
     kotlin("jvm") version "1.8.21"
 }
 
-group = "com.github.mcruzdev.ktmodules.email"
+group = "com.github.mcruzdev.ktmodules.validation"
 version = "0.0.1"
+
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()
